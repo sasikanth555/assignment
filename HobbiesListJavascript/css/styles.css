@@ -1,0 +1,33 @@
+body{
+    background: cadetblue;
+  }
+  li {
+    margin-bottom: 10px;
+    padding: 5px;
+    text-align: center;
+  }
+  .container,.item-list, #error-msg,#root{
+    text-align: center;
+    padding: 15px;
+  }
+  #error-msg span{
+    color : red;
+  }
+  #root{
+    border: 2px solid black;
+    margin : 50px 350px;
+    background: blanchedalmond;
+  }
+  button{
+    background-color:slateblue;
+    color: white;
+    font-size: 14px;
+    padding: 6px 25px;
+    margin-top: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  label{
+    font-size: 20px;
+    font-weight: 700;
+  }
