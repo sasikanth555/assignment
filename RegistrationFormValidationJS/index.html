@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="formContainer"id="formdata">
+        <h1>Registration Form Validation</h1>
+        <form action="welcome.html" method="get" onsubmit="return validateForm()">
+            <div>
+                <div class="section">
+                <label for="firstName">First Name : </label>
+                <input type="text" name="firstName" id="firstName" onblur="validateFirstName()" >
+                <div class="error-section">
+                <span class="error-msg" id="firstNameError"></span>
+                 </div>
+            </div>
+            <div class="section">
+                <label for="lastName">Last Name : </label>
+                <input type="text" name="lastName" onblur="validateLastName()" id="lastName" >
+                <div class="error-section"><span class="error-msg" id="lastNameError"></span></div>
+           </div>
+           <div class="section">
+                <label for="male">Gender : </label>
+                <input type="radio" checked id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+            <div class="section">
+                <label for="city">City : </label>
+                <select name="city" id="city">
+                <option value="Mumbai">Mumbai</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Chennai">Chennai</option>
+                </select>
+            </div>
+            <div class="section">
+                <label for="hobbies">Hobbies : </label>
+                <input type="checkbox" onclick ="selectHobbies()" id="hobbie" name="hobbie" value="Reading">
+                <label for="reading">Reading</label>
+                <input type="checkbox" onclick ="selectHobbies()" id="hobbie" name="hobbie" value="Dancing">
+                <label for="dancing">Dancing</label>
+                <input type="checkbox" onclick ="selectHobbies()" id="hobbie" name="hobbie" value="Singing">
+                <label for="singing">Singing</label>
+                <input type="checkbox" onclick ="selectHobbies()" id="hobbie" name="hobbie" value="Sports">
+                <label for="sports">Sports</label>
+                <div class="error-section"><span class="error-msg" id="HobbiesError"></span></div>
+            </div>
+            <div class="section">
+                <label for="email">Email : </label>
+                <input type="text" name="email" onblur="emailValidation()" id="email" >
+                <div class="error-section"> <span class="error-msg" id="emailError"></span></div>
+            </div> 
+            <div class="section">
+                <label for="phoneNumber">Phone No : </label>
+                <input type="text" name="phoneNumber" onblur = "validatePhoneNum()" id="phoneNumber">
+                <div class="error-section"><span class="error-msg" id="phoneNumberError"></span></div>
+            </div>
+            <div>
+                <button> submit</button>
+            </div>
+            </div>
+            </form>
+    </div>
+    
+
+    <script src="js/main.js"></script>
+</body>
+</html>
