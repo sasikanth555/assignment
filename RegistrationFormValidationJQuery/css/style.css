@@ -1,0 +1,48 @@
+body,label{
+    background-color: lightblue;
+}
+h1{
+    color: blueviolet;
+    text-align: center;
+}
+@media only screen and (min-width: 600px) {
+    .formContainer {
+        margin: 0 300px;
+        padding: 0 100px;
+    }
+  }
+.formContainer{
+    text-align: center;
+    border: 2px solid;   
+}
+
+.error-msg{
+    color :red;
+}
+.section{
+    margin: 5px;
+    padding: 5px;
+}
+.error-section{
+    padding: 5px;
+    text-align: center;
+}
+.button{
+background-color:slateblue;
+color: white;
+font-size: 18px;
+padding: 6px 25px;
+margin-top: 4px;
+border-radius: 5px;
+word-spacing: 10px;
+cursor: pointer;
+}
+
+label{
+    font-size: 14px;
+    color: brown;
+    font-weight: 700;
+}
+h2{
+    text-align: center;
+}
